@@ -1,0 +1,992 @@
+2025-11-21 19:54:29,674 - __main__ - INFO: Запуск бота.
+2025-11-21 19:54:29,693 - aiogram.dispatcher - INFO: Start polling
+2025-11-21 19:54:30,043 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 19:54:30,136 - routers.notes - INFO: Команда add
+2025-11-21 19:54:30,444 - aiogram.event - INFO: Update id=169308835 is handled. Duration 309 ms by bot id=8283811549
+2025-11-21 19:54:35,067 - routers.notes - INFO: Команда add
+2025-11-21 19:54:35,207 - aiogram.event - INFO: Update id=169308836 is handled. Duration 140 ms by bot id=8283811549
+2025-11-21 19:57:04,907 - routers.notes - INFO: Команда add
+2025-11-21 19:57:05,136 - aiogram.event - INFO: Update id=169308837 is handled. Duration 231 ms by bot id=8283811549
+2025-11-21 19:57:08,082 - routers.notes - INFO: Команда add
+2025-11-21 19:57:08,241 - aiogram.event - INFO: Update id=169308838 is handled. Duration 159 ms by bot id=8283811549
+2025-11-21 20:11:56,300 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-21 20:11:56,302 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:11:56,302 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-21 20:11:56,554 - __main__ - INFO: Остановка бота.
+2025-11-21 20:28:10,379 - __main__ - INFO: Запуск бота.
+2025-11-21 20:28:10,396 - aiogram.dispatcher - INFO: Start polling
+2025-11-21 20:28:10,726 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:28:19,257 - routers.notes - INFO: Команда list
+2025-11-21 20:28:19,259 - aiogram.event - INFO: Update id=169308839 is not handled. Duration 3 ms by bot id=8283811549
+2025-11-21 20:28:19,259 - aiogram.event - ERROR: Cause exception while process update id=169308839 by bot id=8283811549
+ProgrammingError: parameters are of unsupported type
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 42, in cmd_list
+    answer = await list_notes(message.from_user.id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/list_handler.py", line 9, in list_notes
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+            SELECT text, created_at FROM notes WHERE user_id = ? ORDER BY created_at;
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """, user_id
+        ^^^^^^^^^^^^
+    )
+    ^
+sqlite3.ProgrammingError: parameters are of unsupported type
+2025-11-21 20:28:50,696 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-21 20:28:50,696 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:28:50,696 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-21 20:28:50,948 - __main__ - INFO: Остановка бота.
+2025-11-21 20:28:52,233 - __main__ - INFO: Запуск бота.
+2025-11-21 20:28:52,250 - aiogram.dispatcher - INFO: Start polling
+2025-11-21 20:28:52,493 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:28:54,869 - routers.notes - INFO: Команда list
+2025-11-21 20:28:54,872 - aiogram.event - INFO: Update id=169308840 is not handled. Duration 3 ms by bot id=8283811549
+2025-11-21 20:28:54,872 - aiogram.event - ERROR: Cause exception while process update id=169308840 by bot id=8283811549
+AttributeError: 'str' object has no attribute 'astimezone'
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 42, in cmd_list
+    answer = await list_notes(message.from_user.id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/list_handler.py", line 19, in list_notes
+    message += f"{row[0]} (создана {row[1].astimezone(ZoneInfo('Europe/Minsk')).strftime('%d.%m.%Y %H:%M')})\n"
+                                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'astimezone'
+2025-11-21 20:30:46,717 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-21 20:30:46,719 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:30:46,719 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-21 20:30:46,971 - __main__ - INFO: Остановка бота.
+2025-11-21 20:34:02,321 - __main__ - INFO: Запуск бота.
+2025-11-21 20:34:02,339 - aiogram.dispatcher - INFO: Start polling
+2025-11-21 20:34:02,651 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:34:33,229 - routers.notes - INFO: Команда add
+2025-11-21 20:34:33,812 - aiogram.event - INFO: Update id=169308841 is handled. Duration 584 ms by bot id=8283811549
+2025-11-21 20:34:36,359 - routers.notes - INFO: Команда add
+2025-11-21 20:34:36,466 - aiogram.event - INFO: Update id=169308842 is handled. Duration 108 ms by bot id=8283811549
+2025-11-21 20:34:44,966 - routers.notes - INFO: Команда add
+2025-11-21 20:34:45,143 - aiogram.event - INFO: Update id=169308843 is handled. Duration 177 ms by bot id=8283811549
+2025-11-21 20:34:53,057 - routers.notes - INFO: Команда list
+2025-11-21 20:34:53,168 - aiogram.event - INFO: Update id=169308844 is handled. Duration 111 ms by bot id=8283811549
+2025-11-21 20:35:36,648 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-21 20:35:36,649 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:35:36,649 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-21 20:35:36,904 - __main__ - INFO: Остановка бота.
+2025-11-21 20:35:38,243 - __main__ - INFO: Запуск бота.
+2025-11-21 20:35:38,261 - aiogram.dispatcher - INFO: Start polling
+2025-11-21 20:35:38,585 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:35:39,848 - routers.notes - INFO: Команда list
+2025-11-21 20:35:40,146 - aiogram.event - INFO: Update id=169308845 is handled. Duration 299 ms by bot id=8283811549
+2025-11-21 20:37:38,186 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-21 20:37:38,187 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-21 20:37:38,187 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-21 20:37:38,443 - __main__ - INFO: Остановка бота.
+2025-11-23 14:12:39,820 - __main__ - INFO: Запуск бота.
+2025-11-23 14:12:39,839 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:12:40,160 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:13:06,335 - routers.notes - INFO: Команда list
+2025-11-23 14:13:06,346 - aiogram.event - INFO: Update id=169308846 is not handled. Duration 11 ms by bot id=8283811549
+2025-11-23 14:13:06,346 - aiogram.event - ERROR: Cause exception while process update id=169308846 by bot id=8283811549
+OperationalError: no such table: notes
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 41, in cmd_list
+    answer = await list_notes(message.from_user.id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/list_handler.py", line 10, in list_notes
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+            SELECT text, created_at FROM notes WHERE user_id = ? ORDER BY created_at;
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """, (user_id,)
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such table: notes
+2025-11-23 14:13:18,053 - routers.notes - INFO: Команда list
+2025-11-23 14:13:18,055 - aiogram.event - INFO: Update id=169308847 is not handled. Duration 2 ms by bot id=8283811549
+2025-11-23 14:13:18,055 - aiogram.event - ERROR: Cause exception while process update id=169308847 by bot id=8283811549
+OperationalError: no such table: notes
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 41, in cmd_list
+    answer = await list_notes(message.from_user.id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/list_handler.py", line 10, in list_notes
+    cur.execute(
+    ~~~~~~~~~~~^
+        """
+        ^^^
+            SELECT text, created_at FROM notes WHERE user_id = ? ORDER BY created_at;
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """, (user_id,)
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such table: notes
+2025-11-23 14:14:01,540 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:14:01,540 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:14:01,540 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:14:01,794 - __main__ - INFO: Остановка бота.
+2025-11-23 14:14:20,083 - __main__ - INFO: Запуск бота.
+2025-11-23 14:14:20,100 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:14:20,349 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:14:22,553 - routers.common - INFO: Команда start
+2025-11-23 14:14:22,840 - aiogram.event - INFO: Update id=169308848 is handled. Duration 288 ms by bot id=8283811549
+2025-11-23 14:14:52,402 - routers.notes - INFO: Команда add
+2025-11-23 14:14:52,406 - aiogram.event - INFO: Update id=169308849 is not handled. Duration 5 ms by bot id=8283811549
+2025-11-23 14:14:52,407 - aiogram.event - ERROR: Cause exception while process update id=169308849 by bot id=8283811549
+OperationalError: no such table: notes
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 18, in cmd_add
+    await add_note(
+    ...<3 lines>...
+        message_obj = message)
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/add_handler.py", line 10, in add_note
+    cur.execute(
+    ~~~~~~~~~~~^
+    """
+    ^^^
+            INSERT INTO notes (user_id, text, created_at) VALUES (?, ?, ?);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """,(user_id, text, created_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such table: notes
+2025-11-23 14:15:04,175 - routers.notes - INFO: Команда add
+2025-11-23 14:15:04,177 - aiogram.event - INFO: Update id=169308850 is not handled. Duration 6 ms by bot id=8283811549
+2025-11-23 14:15:04,177 - aiogram.event - ERROR: Cause exception while process update id=169308850 by bot id=8283811549
+OperationalError: no such table: notes
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 18, in cmd_add
+    await add_note(
+    ...<3 lines>...
+        message_obj = message)
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/add_handler.py", line 10, in add_note
+    cur.execute(
+    ~~~~~~~~~~~^
+    """
+    ^^^
+            INSERT INTO notes (user_id, text, created_at) VALUES (?, ?, ?);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        """,(user_id, text, created_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+sqlite3.OperationalError: no such table: notes
+2025-11-23 14:15:10,261 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:15:10,261 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:15:10,261 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:15:10,515 - __main__ - INFO: Остановка бота.
+2025-11-23 14:23:02,173 - __main__ - INFO: Запуск бота.
+2025-11-23 14:23:02,191 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:23:02,509 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:23:39,988 - routers.notes - INFO: Команда list
+2025-11-23 14:23:40,275 - aiogram.event - INFO: Update id=169308851 is handled. Duration 287 ms by bot id=8283811549
+2025-11-23 14:25:03,283 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:25:03,284 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:25:03,284 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:25:03,536 - __main__ - INFO: Остановка бота.
+2025-11-23 14:25:04,924 - __main__ - INFO: Запуск бота.
+2025-11-23 14:25:04,943 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:25:05,191 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:25:07,256 - routers.notes - INFO: Команда list
+2025-11-23 14:25:07,531 - aiogram.event - INFO: Update id=169308852 is handled. Duration 275 ms by bot id=8283811549
+2025-11-23 14:25:11,306 - routers.notes - INFO: Команда add
+2025-11-23 14:25:11,428 - aiogram.event - INFO: Update id=169308853 is handled. Duration 123 ms by bot id=8283811549
+2025-11-23 14:25:13,796 - routers.notes - INFO: Команда list
+2025-11-23 14:25:13,897 - aiogram.event - INFO: Update id=169308854 is handled. Duration 101 ms by bot id=8283811549
+2025-11-23 14:31:48,941 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:31:48,944 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:31:48,944 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:31:49,196 - __main__ - INFO: Остановка бота.
+2025-11-23 14:31:50,515 - __main__ - INFO: Запуск бота.
+2025-11-23 14:31:50,534 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:31:50,845 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:31:55,404 - routers.notes - INFO: Команда list
+2025-11-23 14:31:55,691 - aiogram.event - INFO: Update id=169308855 is handled. Duration 288 ms by bot id=8283811549
+2025-11-23 14:31:57,674 - routers.notes - INFO: Команда add
+2025-11-23 14:31:57,781 - aiogram.event - INFO: Update id=169308856 is handled. Duration 107 ms by bot id=8283811549
+2025-11-23 14:31:59,475 - routers.notes - INFO: Команда add
+2025-11-23 14:31:59,592 - aiogram.event - INFO: Update id=169308857 is handled. Duration 118 ms by bot id=8283811549
+2025-11-23 14:32:00,786 - routers.notes - INFO: Команда list
+2025-11-23 14:32:00,901 - aiogram.event - INFO: Update id=169308858 is handled. Duration 116 ms by bot id=8283811549
+2025-11-23 14:32:03,463 - routers.notes - INFO: Команда clear
+2025-11-23 14:32:03,576 - aiogram.event - INFO: Update id=169308859 is handled. Duration 114 ms by bot id=8283811549
+2025-11-23 14:32:05,297 - routers.notes - INFO: Команда list
+2025-11-23 14:32:05,401 - aiogram.event - INFO: Update id=169308860 is handled. Duration 104 ms by bot id=8283811549
+2025-11-23 14:38:43,349 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:38:43,354 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:38:43,354 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:38:43,606 - __main__ - INFO: Остановка бота.
+2025-11-23 14:38:44,881 - __main__ - INFO: Запуск бота.
+2025-11-23 14:38:44,898 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:38:45,222 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:38:47,341 - routers.notes - INFO: Команда list
+2025-11-23 14:38:47,665 - aiogram.event - INFO: Update id=169308861 is handled. Duration 328 ms by bot id=8283811549
+2025-11-23 14:38:51,701 - routers.notes - INFO: Команда add
+2025-11-23 14:38:51,820 - aiogram.event - INFO: Update id=169308862 is handled. Duration 119 ms by bot id=8283811549
+2025-11-23 14:38:53,350 - routers.notes - INFO: Команда list
+2025-11-23 14:38:53,489 - aiogram.event - INFO: Update id=169308863 is handled. Duration 139 ms by bot id=8283811549
+2025-11-23 14:38:58,001 - routers.notes - INFO: Команда add
+2025-11-23 14:38:58,190 - aiogram.event - INFO: Update id=169308864 is handled. Duration 189 ms by bot id=8283811549
+2025-11-23 14:38:59,534 - routers.notes - INFO: Команда list
+2025-11-23 14:38:59,640 - aiogram.event - INFO: Update id=169308865 is handled. Duration 106 ms by bot id=8283811549
+2025-11-23 14:43:14,222 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:43:14,224 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:43:14,224 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:43:14,476 - __main__ - INFO: Остановка бота.
+2025-11-23 14:43:15,674 - __main__ - INFO: Запуск бота.
+2025-11-23 14:43:15,691 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:43:16,003 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:44:19,124 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:44:19,126 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:44:19,126 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:44:19,377 - __main__ - INFO: Остановка бота.
+2025-11-23 14:44:20,609 - __main__ - INFO: Запуск бота.
+2025-11-23 14:44:20,626 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:44:20,963 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:44:24,254 - routers.notes - INFO: Команда list
+2025-11-23 14:44:24,561 - aiogram.event - INFO: Update id=169308866 is handled. Duration 308 ms by bot id=8283811549
+2025-11-23 14:44:29,345 - routers.notes - INFO: Команда del
+2025-11-23 14:44:29,347 - aiogram.event - INFO: Update id=169308867 is not handled. Duration 2 ms by bot id=8283811549
+2025-11-23 14:44:29,348 - aiogram.event - ERROR: Cause exception while process update id=169308867 by bot id=8283811549
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 36, in cmd_del
+    await del_note(message.from_user.id, note_pos)
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/delete_handler.py", line 7, in del_note
+    cur.execute("SELECT id FROM notes WHERE user_id = ? ORDER BY id LIMIT 1 OFFSET ?", (user_id, note_pos-1))
+                                                                                                 ~~~~~~~~^~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+2025-11-23 14:44:32,068 - routers.notes - INFO: Команда list
+2025-11-23 14:44:32,294 - aiogram.event - INFO: Update id=169308868 is handled. Duration 227 ms by bot id=8283811549
+2025-11-23 14:47:15,126 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:47:15,129 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:47:15,129 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:47:15,381 - __main__ - INFO: Остановка бота.
+2025-11-23 14:47:16,730 - __main__ - INFO: Запуск бота.
+2025-11-23 14:47:16,746 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:47:17,055 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:47:19,839 - routers.notes - INFO: Команда list
+2025-11-23 14:47:20,139 - aiogram.event - INFO: Update id=169308869 is handled. Duration 300 ms by bot id=8283811549
+2025-11-23 14:47:21,788 - routers.notes - INFO: Команда del
+2025-11-23 14:47:21,914 - aiogram.event - INFO: Update id=169308870 is handled. Duration 126 ms by bot id=8283811549
+2025-11-23 14:47:23,785 - routers.notes - INFO: Команда list
+2025-11-23 14:47:24,008 - aiogram.event - INFO: Update id=169308871 is handled. Duration 223 ms by bot id=8283811549
+2025-11-23 14:48:55,459 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 14:48:55,461 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:48:55,461 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 14:48:55,713 - __main__ - INFO: Остановка бота.
+2025-11-23 14:50:45,737 - __main__ - INFO: Запуск бота.
+2025-11-23 14:50:45,755 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 14:50:46,084 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 14:50:50,290 - routers.notes - INFO: Команда list
+2025-11-23 14:50:50,597 - aiogram.event - INFO: Update id=169308872 is handled. Duration 308 ms by bot id=8283811549
+2025-11-23 14:50:52,078 - routers.notes - INFO: Команда del
+2025-11-23 14:50:52,200 - aiogram.event - INFO: Update id=169308873 is handled. Duration 123 ms by bot id=8283811549
+2025-11-23 14:50:53,667 - routers.notes - INFO: Команда list
+2025-11-23 14:50:53,775 - aiogram.event - INFO: Update id=169308874 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 14:50:57,067 - routers.notes - INFO: Команда del
+2025-11-23 14:50:57,174 - aiogram.event - INFO: Update id=169308875 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 14:50:58,692 - routers.notes - INFO: Команда list
+2025-11-23 14:50:58,848 - aiogram.event - INFO: Update id=169308876 is handled. Duration 161 ms by bot id=8283811549
+2025-11-23 14:51:03,363 - routers.notes - INFO: Команда add
+2025-11-23 14:51:03,462 - aiogram.event - INFO: Update id=169308877 is handled. Duration 99 ms by bot id=8283811549
+2025-11-23 14:51:07,368 - routers.notes - INFO: Команда add
+2025-11-23 14:51:07,495 - aiogram.event - INFO: Update id=169308878 is handled. Duration 128 ms by bot id=8283811549
+2025-11-23 14:51:08,919 - aiogram.event - INFO: Update id=169308879 is not handled. Duration 0 ms by bot id=8283811549
+2025-11-23 14:51:10,527 - routers.notes - INFO: Команда list
+2025-11-23 14:51:10,644 - aiogram.event - INFO: Update id=169308880 is handled. Duration 117 ms by bot id=8283811549
+2025-11-23 14:51:13,319 - routers.notes - INFO: Команда del
+2025-11-23 14:51:13,475 - aiogram.event - INFO: Update id=169308881 is handled. Duration 157 ms by bot id=8283811549
+2025-11-23 14:51:14,996 - routers.notes - INFO: Команда del
+2025-11-23 14:51:14,998 - aiogram.event - INFO: Update id=169308882 is not handled. Duration 2 ms by bot id=8283811549
+2025-11-23 14:51:14,999 - aiogram.event - ERROR: Cause exception while process update id=169308882 by bot id=8283811549
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/.venv/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/routers/notes.py", line 36, in cmd_del
+    await del_note(message.from_user.id, note_pos)
+  File "/Users/whozzzdaniel/Documents/Projects/Pet_projects/notes_bot/handlers/delete_handler.py", line 17, in del_note
+    note_id = cur.fetchone()[0]
+              ~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-11-23 14:51:17,708 - routers.notes - INFO: Команда list
+2025-11-23 14:51:17,900 - aiogram.event - INFO: Update id=169308883 is handled. Duration 192 ms by bot id=8283811549
+2025-11-23 14:51:22,160 - routers.notes - INFO: Команда del
+2025-11-23 14:51:22,284 - aiogram.event - INFO: Update id=169308884 is handled. Duration 124 ms by bot id=8283811549
+2025-11-23 14:51:23,627 - routers.notes - INFO: Команда list
+2025-11-23 14:51:23,735 - aiogram.event - INFO: Update id=169308885 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:02:12,229 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:02:12,231 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:02:12,231 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:02:12,483 - __main__ - INFO: Остановка бота.
+2025-11-23 15:02:13,962 - __main__ - INFO: Запуск бота.
+2025-11-23 15:02:13,980 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:02:14,304 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:02:17,689 - routers.notes - INFO: Команда list
+2025-11-23 15:02:17,984 - aiogram.event - INFO: Update id=169308886 is handled. Duration 296 ms by bot id=8283811549
+2025-11-23 15:02:20,341 - routers.notes - INFO: Команда add
+2025-11-23 15:02:20,663 - aiogram.event - INFO: Update id=169308887 is handled. Duration 322 ms by bot id=8283811549
+2025-11-23 15:02:28,234 - routers.notes - INFO: Команда list
+2025-11-23 15:02:28,480 - aiogram.event - INFO: Update id=169308888 is handled. Duration 246 ms by bot id=8283811549
+2025-11-23 15:02:58,100 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:02:58,101 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:02:58,101 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:02:58,353 - __main__ - INFO: Остановка бота.
+2025-11-23 15:02:59,709 - __main__ - INFO: Запуск бота.
+2025-11-23 15:02:59,726 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:02:59,982 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:03:03,976 - routers.notes - INFO: Команда list
+2025-11-23 15:03:04,339 - aiogram.event - INFO: Update id=169308889 is handled. Duration 364 ms by bot id=8283811549
+2025-11-23 15:03:07,310 - routers.notes - INFO: Команда add
+2025-11-23 15:03:07,414 - aiogram.event - INFO: Update id=169308890 is handled. Duration 105 ms by bot id=8283811549
+2025-11-23 15:03:09,173 - routers.notes - INFO: Команда list
+2025-11-23 15:03:09,280 - aiogram.event - INFO: Update id=169308891 is handled. Duration 107 ms by bot id=8283811549
+2025-11-23 15:03:10,715 - routers.notes - INFO: Команда del
+2025-11-23 15:03:10,852 - aiogram.event - INFO: Update id=169308892 is handled. Duration 137 ms by bot id=8283811549
+2025-11-23 15:04:01,261 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:04:01,264 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:04:01,264 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:04:01,516 - __main__ - INFO: Остановка бота.
+2025-11-23 15:04:02,920 - __main__ - INFO: Запуск бота.
+2025-11-23 15:04:02,937 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:04:03,254 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:04:05,860 - routers.notes - INFO: Команда list
+2025-11-23 15:04:06,207 - aiogram.event - INFO: Update id=169308893 is handled. Duration 348 ms by bot id=8283811549
+2025-11-23 15:04:07,554 - routers.notes - INFO: Команда del
+2025-11-23 15:04:07,556 - routers.notes - ERROR: 'NoneType' object is not subscriptable
+2025-11-23 15:04:07,648 - aiogram.event - INFO: Update id=169308894 is handled. Duration 96 ms by bot id=8283811549
+2025-11-23 15:04:55,295 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:04:55,298 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:04:55,298 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:04:55,551 - __main__ - INFO: Остановка бота.
+2025-11-23 15:04:56,900 - __main__ - INFO: Запуск бота.
+2025-11-23 15:04:56,917 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:04:57,152 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:05:04,404 - routers.notes - INFO: Команда list
+2025-11-23 15:05:04,752 - aiogram.event - INFO: Update id=169308895 is handled. Duration 349 ms by bot id=8283811549
+2025-11-23 15:05:06,303 - routers.notes - INFO: Команда del
+2025-11-23 15:05:06,307 - routers.notes - ERROR: object of type 'int' has no len()
+2025-11-23 15:05:06,539 - aiogram.event - INFO: Update id=169308896 is handled. Duration 236 ms by bot id=8283811549
+2025-11-23 15:05:42,001 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:05:42,005 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:05:42,006 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:05:42,258 - __main__ - INFO: Остановка бота.
+2025-11-23 15:05:43,555 - __main__ - INFO: Запуск бота.
+2025-11-23 15:05:43,574 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:05:43,829 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:05:45,863 - routers.notes - INFO: Команда list
+2025-11-23 15:05:46,151 - aiogram.event - INFO: Update id=169308897 is handled. Duration 288 ms by bot id=8283811549
+2025-11-23 15:05:47,333 - routers.notes - INFO: Команда del
+2025-11-23 15:05:47,335 - routers.notes - ERROR: object of type 'int' has no len()
+2025-11-23 15:05:47,429 - aiogram.event - INFO: Update id=169308898 is handled. Duration 96 ms by bot id=8283811549
+2025-11-23 15:06:22,799 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:06:22,800 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:06:22,801 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:06:23,053 - __main__ - INFO: Остановка бота.
+2025-11-23 15:06:24,443 - __main__ - INFO: Запуск бота.
+2025-11-23 15:06:24,461 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:06:24,783 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:06:27,806 - routers.notes - INFO: Команда list
+2025-11-23 15:06:28,090 - aiogram.event - INFO: Update id=169308899 is handled. Duration 284 ms by bot id=8283811549
+2025-11-23 15:06:29,613 - routers.notes - INFO: Команда del
+2025-11-23 15:06:29,725 - aiogram.event - INFO: Update id=169308900 is handled. Duration 112 ms by bot id=8283811549
+2025-11-23 15:06:31,185 - routers.notes - INFO: Команда list
+2025-11-23 15:06:31,321 - aiogram.event - INFO: Update id=169308901 is handled. Duration 137 ms by bot id=8283811549
+2025-11-23 15:06:32,813 - routers.notes - INFO: Команда del
+2025-11-23 15:06:32,816 - routers.notes - ERROR: 'NoneType' object is not subscriptable
+2025-11-23 15:06:32,941 - aiogram.event - INFO: Update id=169308902 is handled. Duration 128 ms by bot id=8283811549
+2025-11-23 15:07:25,438 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:07:25,441 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:07:25,442 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:07:25,694 - __main__ - INFO: Остановка бота.
+2025-11-23 15:07:26,947 - __main__ - INFO: Запуск бота.
+2025-11-23 15:07:26,966 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:07:27,248 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:07:29,949 - routers.notes - INFO: Команда list
+2025-11-23 15:07:30,245 - aiogram.event - INFO: Update id=169308903 is handled. Duration 298 ms by bot id=8283811549
+2025-11-23 15:07:31,675 - routers.notes - INFO: Команда del
+2025-11-23 15:07:31,836 - aiogram.event - INFO: Update id=169308904 is handled. Duration 161 ms by bot id=8283811549
+2025-11-23 15:07:33,250 - routers.notes - INFO: Команда list
+2025-11-23 15:07:33,431 - aiogram.event - INFO: Update id=169308905 is handled. Duration 180 ms by bot id=8283811549
+2025-11-23 15:07:36,452 - routers.notes - INFO: Команда add
+2025-11-23 15:07:36,621 - aiogram.event - INFO: Update id=169308906 is handled. Duration 169 ms by bot id=8283811549
+2025-11-23 15:07:38,573 - routers.notes - INFO: Команда add
+2025-11-23 15:07:38,695 - aiogram.event - INFO: Update id=169308907 is handled. Duration 123 ms by bot id=8283811549
+2025-11-23 15:07:39,763 - routers.notes - INFO: Команда list
+2025-11-23 15:07:39,882 - aiogram.event - INFO: Update id=169308908 is handled. Duration 119 ms by bot id=8283811549
+2025-11-23 15:07:41,953 - routers.notes - INFO: Команда del
+2025-11-23 15:07:41,955 - routers.notes - ERROR: 'NoneType' object is not subscriptable
+2025-11-23 15:07:42,103 - aiogram.event - INFO: Update id=169308909 is handled. Duration 150 ms by bot id=8283811549
+2025-11-23 15:08:03,430 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:08:03,431 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:08:03,431 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:08:03,683 - __main__ - INFO: Остановка бота.
+2025-11-23 15:08:05,069 - __main__ - INFO: Запуск бота.
+2025-11-23 15:08:05,088 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:08:05,324 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:08:07,404 - routers.notes - INFO: Команда del
+2025-11-23 15:08:07,699 - aiogram.event - INFO: Update id=169308910 is handled. Duration 295 ms by bot id=8283811549
+2025-11-23 15:08:20,476 - routers.notes - INFO: Команда del
+2025-11-23 15:08:20,478 - routers.notes - ERROR: Error binding parameter 1: type 'tuple' is not supported
+2025-11-23 15:08:20,644 - aiogram.event - INFO: Update id=169308911 is handled. Duration 169 ms by bot id=8283811549
+2025-11-23 15:09:30,259 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:09:30,260 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:09:30,260 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:09:30,512 - __main__ - INFO: Остановка бота.
+2025-11-23 15:09:32,027 - __main__ - INFO: Запуск бота.
+2025-11-23 15:09:32,049 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:09:32,390 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:09:33,635 - routers.notes - INFO: Команда list
+2025-11-23 15:09:33,917 - aiogram.event - INFO: Update id=169308912 is handled. Duration 283 ms by bot id=8283811549
+2025-11-23 15:09:35,247 - routers.notes - INFO: Команда del
+2025-11-23 15:09:35,378 - aiogram.event - INFO: Update id=169308913 is handled. Duration 131 ms by bot id=8283811549
+2025-11-23 15:09:43,256 - routers.notes - INFO: Команда list
+2025-11-23 15:09:43,373 - aiogram.event - INFO: Update id=169308914 is handled. Duration 117 ms by bot id=8283811549
+2025-11-23 15:09:44,123 - routers.notes - INFO: Команда del
+2025-11-23 15:09:44,249 - aiogram.event - INFO: Update id=169308915 is handled. Duration 126 ms by bot id=8283811549
+2025-11-23 15:09:49,992 - routers.notes - INFO: Команда list
+2025-11-23 15:09:50,112 - aiogram.event - INFO: Update id=169308916 is handled. Duration 121 ms by bot id=8283811549
+2025-11-23 15:09:51,585 - routers.notes - INFO: Команда del
+2025-11-23 15:09:51,693 - aiogram.event - INFO: Update id=169308917 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:09:56,766 - routers.notes - INFO: Команда del
+2025-11-23 15:09:56,766 - routers.notes - ERROR: invalid literal for int() with base 10: '/del'
+2025-11-23 15:09:56,884 - aiogram.event - INFO: Update id=169308918 is handled. Duration 119 ms by bot id=8283811549
+2025-11-23 15:10:05,096 - routers.notes - INFO: Команда del
+2025-11-23 15:10:05,096 - routers.notes - ERROR: invalid literal for int() with base 10: 'a'
+2025-11-23 15:10:05,194 - aiogram.event - INFO: Update id=169308919 is handled. Duration 99 ms by bot id=8283811549
+2025-11-23 15:20:35,217 - routers.notes - INFO: Команда add
+2025-11-23 15:20:35,791 - aiogram.event - INFO: Update id=169308920 is handled. Duration 576 ms by bot id=8283811549
+2025-11-23 15:20:54,292 - routers.notes - INFO: Команда add
+2025-11-23 15:20:54,510 - aiogram.event - INFO: Update id=169308921 is handled. Duration 219 ms by bot id=8283811549
+2025-11-23 15:20:59,272 - routers.notes - INFO: Команда list
+2025-11-23 15:20:59,402 - aiogram.event - INFO: Update id=169308922 is handled. Duration 130 ms by bot id=8283811549
+2025-11-23 15:21:57,856 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:21:57,858 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:21:57,858 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:21:58,110 - __main__ - INFO: Остановка бота.
+2025-11-23 15:21:59,409 - __main__ - INFO: Запуск бота.
+2025-11-23 15:21:59,430 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:21:59,737 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:22:01,214 - routers.notes - INFO: Команда list
+2025-11-23 15:22:01,649 - aiogram.event - INFO: Update id=169308923 is handled. Duration 436 ms by bot id=8283811549
+2025-11-23 15:22:03,392 - routers.notes - INFO: Команда add
+2025-11-23 15:22:03,496 - aiogram.event - INFO: Update id=169308924 is handled. Duration 104 ms by bot id=8283811549
+2025-11-23 15:24:22,533 - routers.common - INFO: Команда help
+2025-11-23 15:24:22,731 - aiogram.event - INFO: Update id=169308925 is handled. Duration 198 ms by bot id=8283811549
+2025-11-23 15:24:59,376 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:24:59,377 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:24:59,377 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:24:59,629 - __main__ - INFO: Остановка бота.
+2025-11-23 15:25:00,989 - __main__ - INFO: Запуск бота.
+2025-11-23 15:25:01,009 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:25:01,260 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:25:03,146 - routers.common - INFO: Команда help
+2025-11-23 15:25:03,505 - aiogram.event - INFO: Update id=169308926 is handled. Duration 359 ms by bot id=8283811549
+2025-11-23 15:25:11,561 - routers.notes - INFO: Команда list
+2025-11-23 15:25:11,670 - aiogram.event - INFO: Update id=169308927 is handled. Duration 110 ms by bot id=8283811549
+2025-11-23 15:34:43,444 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:34:43,448 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:34:43,448 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:34:43,700 - __main__ - INFO: Остановка бота.
+2025-11-23 15:34:45,041 - __main__ - INFO: Запуск бота.
+2025-11-23 15:34:45,125 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:34:45,647 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:34:49,856 - routers.notes - INFO: Команда list
+2025-11-23 15:34:50,113 - aiogram.event - INFO: Update id=169308928 is handled. Duration 258 ms by bot id=8283811549
+2025-11-23 15:34:56,295 - routers.notes - INFO: Команда edit
+2025-11-23 15:34:56,419 - aiogram.event - INFO: Update id=169308929 is handled. Duration 124 ms by bot id=8283811549
+2025-11-23 15:34:58,263 - routers.notes - INFO: Команда list
+2025-11-23 15:34:58,386 - aiogram.event - INFO: Update id=169308930 is handled. Duration 124 ms by bot id=8283811549
+2025-11-23 15:35:02,186 - routers.notes - INFO: Команда edit
+2025-11-23 15:35:02,187 - routers.notes - ERROR: list index out of range
+2025-11-23 15:35:02,456 - aiogram.event - INFO: Update id=169308931 is handled. Duration 270 ms by bot id=8283811549
+2025-11-23 15:35:06,888 - routers.notes - INFO: Команда edit
+2025-11-23 15:35:06,994 - aiogram.event - INFO: Update id=169308932 is handled. Duration 105 ms by bot id=8283811549
+2025-11-23 15:35:10,577 - routers.notes - INFO: Команда edit
+2025-11-23 15:35:10,578 - routers.notes - ERROR: invalid literal for int() with base 10: '/edit'
+2025-11-23 15:35:10,684 - aiogram.event - INFO: Update id=169308933 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:35:14,086 - routers.notes - INFO: Команда list
+2025-11-23 15:35:14,195 - aiogram.event - INFO: Update id=169308934 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:35:16,097 - routers.notes - INFO: Команда del
+2025-11-23 15:35:16,272 - aiogram.event - INFO: Update id=169308935 is handled. Duration 176 ms by bot id=8283811549
+2025-11-23 15:35:17,806 - routers.notes - INFO: Команда list
+2025-11-23 15:35:17,914 - aiogram.event - INFO: Update id=169308936 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:35:21,032 - routers.common - INFO: Команда help
+2025-11-23 15:35:21,264 - aiogram.event - INFO: Update id=169308937 is handled. Duration 232 ms by bot id=8283811549
