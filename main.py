@@ -45,7 +45,7 @@ async def main() -> None:
     try:
         await dp.start_polling(bot)
     except Exception as e:
-        logger.exception("Критическая ошибка.")
+        logger.exception(e)
     finally:
         logger.info("Остановка бота.")
 
