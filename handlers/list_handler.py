@@ -23,7 +23,6 @@ async def list_notes(user_id, message_obj):
             messages.append(f"<b>{i}. {text}</b> <i>(создана {readable})</i>\n")
 
         batch = 11
-        print(messages)
         for i in range(0, len(messages), batch):
             messages_batch = messages[i:i + batch]
             await message_obj.answer("".join(messages_batch))
