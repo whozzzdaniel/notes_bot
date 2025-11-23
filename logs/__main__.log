@@ -990,3 +990,147 @@ TypeError: 'NoneType' object is not subscriptable
 2025-11-23 15:35:17,914 - aiogram.event - INFO: Update id=169308936 is handled. Duration 108 ms by bot id=8283811549
 2025-11-23 15:35:21,032 - routers.common - INFO: Команда help
 2025-11-23 15:35:21,264 - aiogram.event - INFO: Update id=169308937 is handled. Duration 232 ms by bot id=8283811549
+2025-11-23 15:50:30,370 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:50:30,372 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:50:30,372 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:50:30,625 - __main__ - INFO: Остановка бота.
+2025-11-23 15:50:32,047 - __main__ - INFO: Запуск бота.
+2025-11-23 15:50:32,065 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:50:32,379 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:50:34,767 - routers.notes - INFO: Команда list
+2025-11-23 15:50:35,070 - aiogram.event - INFO: Update id=169308938 is handled. Duration 303 ms by bot id=8283811549
+2025-11-23 15:53:18,247 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:53:18,247 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:53:18,247 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:53:18,499 - __main__ - INFO: Остановка бота.
+2025-11-23 15:53:19,722 - __main__ - INFO: Запуск бота.
+2025-11-23 15:53:19,739 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:53:19,977 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:53:23,506 - routers.common - INFO: Команда start
+2025-11-23 15:53:23,803 - aiogram.event - INFO: Update id=169308939 is handled. Duration 298 ms by bot id=8283811549
+2025-11-23 15:53:46,334 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:53:46,335 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:53:46,335 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:53:46,587 - __main__ - INFO: Остановка бота.
+2025-11-23 15:53:47,802 - __main__ - INFO: Запуск бота.
+2025-11-23 15:53:47,818 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:53:48,061 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:53:49,369 - routers.common - INFO: Команда start
+2025-11-23 15:53:49,696 - aiogram.event - INFO: Update id=169308940 is handled. Duration 328 ms by bot id=8283811549
+2025-11-23 15:53:52,894 - routers.notes - INFO: Команда list
+2025-11-23 15:53:52,896 - aiogram.event - INFO: Update id=169308941 is handled. Duration 2 ms by bot id=8283811549
+2025-11-23 15:54:42,744 - routers.common - INFO: Команда help
+2025-11-23 15:54:42,853 - aiogram.event - INFO: Update id=169308942 is handled. Duration 108 ms by bot id=8283811549
+2025-11-23 15:54:45,455 - routers.notes - INFO: Команда add
+2025-11-23 15:54:45,582 - aiogram.event - INFO: Update id=169308943 is handled. Duration 128 ms by bot id=8283811549
+2025-11-23 15:54:47,014 - routers.notes - INFO: Команда list
+2025-11-23 15:54:47,018 - aiogram.event - INFO: Update id=169308944 is handled. Duration 4 ms by bot id=8283811549
+2025-11-23 15:55:10,241 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:55:10,242 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:55:10,242 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:55:10,493 - __main__ - INFO: Остановка бота.
+2025-11-23 15:55:11,680 - __main__ - INFO: Запуск бота.
+2025-11-23 15:55:11,697 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:55:12,011 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:55:14,279 - routers.notes - INFO: Команда list
+2025-11-23 15:55:14,542 - routers.notes - ERROR: Telegram server says - Bad Request: message text is empty
+2025-11-23 15:55:14,658 - aiogram.event - INFO: Update id=169308945 is handled. Duration 380 ms by bot id=8283811549
+2025-11-23 15:56:28,380 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:56:28,380 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:56:28,380 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:56:28,632 - __main__ - INFO: Остановка бота.
+2025-11-23 15:56:29,819 - __main__ - INFO: Запуск бота.
+2025-11-23 15:56:29,836 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:56:30,083 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:56:31,452 - routers.notes - INFO: Команда list
+2025-11-23 15:56:31,726 - aiogram.event - INFO: Update id=169308946 is handled. Duration 274 ms by bot id=8283811549
+2025-11-23 15:58:05,162 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:58:05,163 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:58:05,163 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:58:05,414 - __main__ - INFO: Остановка бота.
+2025-11-23 15:58:06,605 - __main__ - INFO: Запуск бота.
+2025-11-23 15:58:06,622 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:58:06,864 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:58:09,486 - routers.notes - INFO: Команда list
+2025-11-23 15:58:09,787 - aiogram.event - INFO: Update id=169308947 is handled. Duration 302 ms by bot id=8283811549
+2025-11-23 15:58:33,508 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:58:33,509 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:58:33,509 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:58:33,760 - __main__ - INFO: Остановка бота.
+2025-11-23 15:58:34,884 - __main__ - INFO: Запуск бота.
+2025-11-23 15:58:34,900 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:58:35,122 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:58:38,739 - routers.notes - INFO: Команда list
+2025-11-23 15:58:39,032 - aiogram.event - INFO: Update id=169308948 is handled. Duration 293 ms by bot id=8283811549
+2025-11-23 15:59:48,775 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 15:59:48,776 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:59:48,776 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 15:59:49,028 - __main__ - INFO: Остановка бота.
+2025-11-23 15:59:50,231 - __main__ - INFO: Запуск бота.
+2025-11-23 15:59:50,247 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 15:59:50,542 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 15:59:51,747 - routers.notes - INFO: Команда list
+2025-11-23 15:59:52,055 - aiogram.event - INFO: Update id=169308949 is handled. Duration 309 ms by bot id=8283811549
+2025-11-23 16:00:02,153 - routers.notes - INFO: Команда add
+2025-11-23 16:00:02,344 - aiogram.event - INFO: Update id=169308950 is handled. Duration 191 ms by bot id=8283811549
+2025-11-23 16:00:04,255 - routers.notes - INFO: Команда add
+2025-11-23 16:00:04,366 - aiogram.event - INFO: Update id=169308951 is handled. Duration 110 ms by bot id=8283811549
+2025-11-23 16:00:06,394 - routers.notes - INFO: Команда add
+2025-11-23 16:00:06,644 - aiogram.event - INFO: Update id=169308952 is handled. Duration 250 ms by bot id=8283811549
+2025-11-23 16:00:08,305 - routers.notes - INFO: Команда add
+2025-11-23 16:00:08,423 - aiogram.event - INFO: Update id=169308953 is handled. Duration 118 ms by bot id=8283811549
+2025-11-23 16:00:10,375 - routers.notes - INFO: Команда add
+2025-11-23 16:00:10,486 - aiogram.event - INFO: Update id=169308954 is handled. Duration 111 ms by bot id=8283811549
+2025-11-23 16:00:12,355 - routers.notes - INFO: Команда add
+2025-11-23 16:00:12,482 - aiogram.event - INFO: Update id=169308955 is handled. Duration 127 ms by bot id=8283811549
+2025-11-23 16:00:14,776 - routers.notes - INFO: Команда add
+2025-11-23 16:00:14,891 - aiogram.event - INFO: Update id=169308956 is handled. Duration 116 ms by bot id=8283811549
+2025-11-23 16:00:16,934 - routers.notes - INFO: Команда add
+2025-11-23 16:00:17,124 - aiogram.event - INFO: Update id=169308957 is handled. Duration 190 ms by bot id=8283811549
+2025-11-23 16:00:19,975 - routers.notes - INFO: Команда add
+2025-11-23 16:00:20,154 - aiogram.event - INFO: Update id=169308958 is handled. Duration 179 ms by bot id=8283811549
+2025-11-23 16:00:21,305 - routers.notes - INFO: Команда list
+2025-11-23 16:00:21,632 - aiogram.event - INFO: Update id=169308959 is handled. Duration 328 ms by bot id=8283811549
+2025-11-23 16:00:44,463 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 16:00:44,463 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:00:44,463 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 16:00:44,714 - __main__ - INFO: Остановка бота.
+2025-11-23 16:00:45,916 - __main__ - INFO: Запуск бота.
+2025-11-23 16:00:45,932 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 16:00:46,196 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:00:47,229 - routers.notes - INFO: Команда list
+2025-11-23 16:00:47,592 - aiogram.event - INFO: Update id=169308960 is handled. Duration 363 ms by bot id=8283811549
+2025-11-23 16:00:51,265 - routers.notes - INFO: Команда add
+2025-11-23 16:00:51,513 - aiogram.event - INFO: Update id=169308961 is handled. Duration 249 ms by bot id=8283811549
+2025-11-23 16:00:53,873 - routers.notes - INFO: Команда list
+2025-11-23 16:00:54,096 - aiogram.event - INFO: Update id=169308962 is handled. Duration 222 ms by bot id=8283811549
+2025-11-23 16:09:58,124 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 16:09:58,126 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:09:58,126 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 16:09:58,377 - __main__ - INFO: Остановка бота.
+2025-11-23 16:09:59,675 - __main__ - INFO: Запуск бота.
+2025-11-23 16:09:59,693 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 16:09:59,999 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:10:02,293 - routers.notes - INFO: Команда list
+2025-11-23 16:10:02,682 - aiogram.event - INFO: Update id=169308963 is handled. Duration 389 ms by bot id=8283811549
+2025-11-23 16:10:37,982 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 16:10:37,983 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:10:37,983 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 16:10:38,235 - __main__ - INFO: Остановка бота.
+2025-11-23 16:10:39,448 - __main__ - INFO: Запуск бота.
+2025-11-23 16:10:39,464 - aiogram.dispatcher - INFO: Start polling
+2025-11-23 16:10:39,712 - aiogram.dispatcher - INFO: Run polling for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:10:40,628 - routers.notes - INFO: Команда list
+2025-11-23 16:10:41,274 - aiogram.event - INFO: Update id=169308964 is handled. Duration 647 ms by bot id=8283811549
+2025-11-23 16:10:51,397 - routers.notes - INFO: Команда del
+2025-11-23 16:10:51,507 - aiogram.event - INFO: Update id=169308965 is handled. Duration 110 ms by bot id=8283811549
+2025-11-23 16:10:54,094 - routers.notes - INFO: Команда del
+2025-11-23 16:10:54,205 - aiogram.event - INFO: Update id=169308966 is handled. Duration 111 ms by bot id=8283811549
+2025-11-23 16:10:55,400 - routers.notes - INFO: Команда del
+2025-11-23 16:10:55,537 - aiogram.event - INFO: Update id=169308967 is handled. Duration 137 ms by bot id=8283811549
+2025-11-23 16:10:56,797 - routers.notes - INFO: Команда list
+2025-11-23 16:10:56,926 - aiogram.event - INFO: Update id=169308968 is handled. Duration 130 ms by bot id=8283811549
+2025-11-23 16:11:33,772 - aiogram.dispatcher - WARNING: Received SIGINT signal
+2025-11-23 16:11:33,773 - aiogram.dispatcher - INFO: Polling stopped for bot @noteszbot id=8283811549 - 'Notes Bot'
+2025-11-23 16:11:33,773 - aiogram.dispatcher - INFO: Polling stopped
+2025-11-23 16:11:34,025 - __main__ - INFO: Остановка бота.

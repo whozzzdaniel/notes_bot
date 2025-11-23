@@ -53,9 +53,12 @@ async def cmd_clear(message: Message):
 async def cmd_list(message: Message):
     logger.info("Команда list")
 
-    answer = await list_notes(message.from_user.id)
-    await message.answer(answer)
+    try:
+        await list_notes(message.from_user.id, message)
+    except Exception as e:
+        logger.error(e)
 
+        await message.answer("Произошла ошибка.")
 
 @router.message(Command("edit"))
 async def cmd_edit(message: Message):
